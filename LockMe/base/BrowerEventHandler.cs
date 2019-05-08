@@ -10,8 +10,13 @@ namespace LockMe
 
         public static  void SetIsLoading(IWebBrowser browser,bool isLoading, string url)
         {
+
             if (isLoading)
                 return;
+            int autologin = Int32.Parse(ConfigurationManager.AppSettings["AUTO_LOGIN"]);
+            if(autologin!=1)
+                return;
+
             if (url == ConfigurationManager.AppSettings["HOME_URL"])
             {
 

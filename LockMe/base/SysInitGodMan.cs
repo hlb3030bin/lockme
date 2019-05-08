@@ -73,7 +73,7 @@ namespace LockMe
         {
             //管理任务管理器的方法
             //0：启用任务管理器 1：禁用任务管理器
-            SysTaskMan.TaskManager(Int32.Parse(ConfigurationManager.AppSettings["IS_TASK"]));
+            SysTaskMan.TaskManager();
         }
     }
 }

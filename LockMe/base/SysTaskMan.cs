@@ -1,11 +1,15 @@
-﻿using Microsoft.Win32;
+﻿using System;
+using System.Configuration;
+using Microsoft.Win32;
 
 namespace LockMe
 {
     public class SysTaskMan
     {
-        public static void TaskManager(int arg)
+        public static void TaskManager()
         {
+            int arg = Int32.Parse(ConfigurationManager.AppSettings["IS_TASK"]);
+
             var currentUser = Registry.CurrentUser;
             var system = currentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Policies\System", true);
             //如果system项不存在就创建这个项

@@ -44,6 +44,7 @@ namespace LockMe
             try
             {             
                 InitializeComponent();
+                BorderShow();
                 SysInitGodMan.Instance().SysInit();
                 InitBrowser();
             
@@ -58,17 +59,21 @@ namespace LockMe
         {
             FullScreen();
         }
+        private void BorderShow()
+        {
+            if (Int32.Parse(ConfigurationManager.AppSettings["IS_BORDER"]) == 1)
+            {
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+
+            }
+        }
+
+
         /// <summary>
         /// 全屏
         /// </summary>
         private void FullScreen()
         {
-            
-            if (ConfigurationManager.AppSettings["IS_BORDER"] == "Y")
-            {
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
-               
-            }
             SetVisibleCore(true);
         }
 
