@@ -64,7 +64,7 @@ namespace LockMe
             //    Application.Exit();
             //    //return;             
             //}
-            #endregion
+            //#endregion
         }
     }
 }
