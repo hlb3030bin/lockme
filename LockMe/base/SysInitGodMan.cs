@@ -10,7 +10,8 @@ namespace LockMe
     {
         public  void SysInit()
         {
-            Cef.Initialize(InitSettings());
+
+            InitCefSettings();
             InitHook();
             InitTmKill();
             InitAutoRun();
@@ -21,7 +22,7 @@ namespace LockMe
         {
             return  new SysInitGodMan();
         }
-        private  CefSettings InitSettings()
+        private  void InitCefSettings()
         {
             var settings = new CefSettings();
             settings.CachePath = "cache";
@@ -32,8 +33,7 @@ namespace LockMe
             settings.AcceptLanguageList = "zh-CN";
             settings.CefCommandLineArgs.Add("--ignore-urlfetcher-cert-requests", "1");
             settings.CefCommandLineArgs.Add("--ignore-certificate-errors", "1");
-
-            return settings;
+            Cef.Initialize(settings);
         }
         private readonly SysHookMan hook = new SysHookMan();
         /// <summary>
