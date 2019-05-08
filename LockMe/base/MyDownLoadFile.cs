@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Diagnostics;
 using System.IO;
 using CefSharp;
@@ -21,7 +21,6 @@ namespace LockMe
                     string path = Directory.GetCurrentDirectory() +@"\"+
                                   $@"ica\" +
                                   downloadItem.SuggestedFileName;
-                    //logger.Info(path);
                     callback.Continue(path,
                         showDialog: false);
                 }
@@ -31,11 +30,9 @@ namespace LockMe
         public void OnDownloadUpdated(IWebBrowser chromiumWebBrowser, IBrowser browser, DownloadItem downloadItem,
             IDownloadItemCallback callback)
         {
-            //throw new System.NotImplementedException();
             if (!callback.IsDisposed)
             {
                 string path= downloadItem.FullPath;
-                //logger.Info(path);
                 if (path != ""&& downloadItem.IsComplete==true)
                 {
                     Process pr = new Process();
@@ -43,7 +40,6 @@ namespace LockMe
                     pr.Start();
                 }
 
-                Console.WriteLine(path);
             }
         }
     }

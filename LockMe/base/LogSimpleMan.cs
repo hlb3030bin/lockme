@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LockMe
 {
-    public class LogMan
+    public class LogSimpleMan
     {
         public static void WriteLogFile(string strLog)
         {
@@ -55,7 +55,7 @@ namespace LockMe
         }
         private static string CreateDic()
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "\\log";
+            string path = AppDomain.CurrentDomain.BaseDirectory + "\\logsimpleman\\log";
             //检查上传的物理路径是否存在，不存在则创建
             string sFilePath = path + DateTime.Now.ToString("yyyyMM");
             string sFileName = "" + DateTime.Now.ToString("yyyyMMdd") + ".log";

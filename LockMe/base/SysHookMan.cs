@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace LockMe
 {
-    public class Hook
+    public class SysHookMan
     {
         public delegate int HookProc(int nCode, int wParam, IntPtr lParam);
 
@@ -26,7 +26,6 @@ namespace LockMe
             public int dwExtraInfo;
         }
 
-        #region DllImport
 
         //设置钩子 
         [DllImport("user32.dll")]
@@ -47,11 +46,7 @@ namespace LockMe
         public static extern IntPtr GetModuleHandle(string name);
 
 
-        #endregion
-
-        #region 自定义事件
-
-        public void Hook_Start()
+        public void HookStart()
         {
             // 安装键盘钩子 
             if (hHook == 0)
@@ -65,7 +60,7 @@ namespace LockMe
                 //如果设置钩子失败. 
                 if (hHook == 0)
                 {
-                    Hook_Clear();
+                    HookClear();
                     throw new Exception();
                 }
                 else
@@ -75,7 +70,7 @@ namespace LockMe
         }
 
         //取消钩子事件 
-        public void Hook_Clear()
+        public void HookClear()
         {
             bool retKeyboard = true;
             if (hHook != 0)
@@ -118,7 +113,5 @@ namespace LockMe
 
             return CallNextHookEx(hHook, nCode, wParam, lParam);
         }
-
-        #endregion
     }
 }

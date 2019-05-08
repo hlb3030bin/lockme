@@ -41,7 +41,7 @@
             this.Name = "LockMe";
             this.Text = "LockMe";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.LockMeLoad);
             this.ResumeLayout(false);
 
         }

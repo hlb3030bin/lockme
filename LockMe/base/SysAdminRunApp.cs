@@ -4,22 +4,12 @@ using NLog;
 
 namespace LockMe
 {
-    static class Program
+    public class SysAdminRunApp
     {
-        private static ILogger logger = LogManager.GetCurrentClassLogger();
+        private static  ILogger logger = LogManager.GetCurrentClassLogger();
 
-        /// <summary>
-        /// 应用程序的主入口点。
-        /// </summary>
-        [STAThread]
-        static void Main()
+        public static void RunApp(Form appform)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LockMe());
-            SysAdminRunApp.RunApp(new LockMe());
-            return;
-            #region 去掉
             //获得当前登录的Windows用户标示
             System.Security.Principal.WindowsIdentity identity = System.Security.Principal.WindowsIdentity.GetCurrent();
             System.Security.Principal.WindowsPrincipal principal =
@@ -33,7 +23,7 @@ namespace LockMe
                 logger.Info("------ Application.Run(new LockMe());------");
 
                 //如果是管理员，则直接运行
-                Application.Run(new LockMe());
+                Application.Run(appform);
             }
             else
             {
@@ -57,14 +47,11 @@ namespace LockMe
                     logger.Info($@"------{ex.StackTrace}------");
                     return;
                 }
-
                 logger.Info("------ Application.Exit();------");
 
                 //退出
                 Application.Exit();
-                //return;             
             }
-            #endregion
         }
     }
 }
