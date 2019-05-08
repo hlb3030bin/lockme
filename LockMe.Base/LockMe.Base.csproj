@@ -56,6 +56,7 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +65,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="oxbase\BrowerEventHandler.cs" />
+    <Compile Include="oxbase\ControlExtensions.cs" />
+    <Compile Include="oxbase\LogSimpleMan.cs" />
+    <Compile Include="oxbase\MenuHandler.cs" />
+    <Compile Include="oxbase\MyDownLoadFile.cs" />
+    <Compile Include="oxbase\SysAdminRunApp.cs" />
+    <Compile Include="oxbase\SysAutoRunMan.cs" />
+    <Compile Include="oxbase\SysHookMan.cs" />
+    <Compile Include="oxbase\SysInitGodMan.cs" />
+    <Compile Include="oxbase\SysNlogMan.cs" />
+    <Compile Include="oxbase\SysTaskMan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
