@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using System.IO;
 using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms;
@@ -24,8 +25,17 @@ namespace LockMe
         }
         private  void InitCefSettings()
         {
-            var settings = new CefSettings();
-            settings.CachePath = "cache";
+
+            CefSharpSettings.SubprocessExitIfParentProcessClosed = true;
+
+            Cef.EnableHighDPISupport();
+            var settings = new CefSettings()
+            {
+                //By default CefSharp will use an in-memory cache, you need to specify a Cache Folder to persist data
+                CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "CefSharp\\Cache")
+            };
+
+
             settings.CefCommandLineArgs.Add("enable-media-stream", "1");
             settings.UserAgent =
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36";
@@ -33,7 +43,7 @@ namespace LockMe
             settings.AcceptLanguageList = "zh-CN";
             settings.CefCommandLineArgs.Add("--ignore-urlfetcher-cert-requests", "1");
             settings.CefCommandLineArgs.Add("--ignore-certificate-errors", "1");
-            Cef.Initialize(settings);
+            Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
         }
         private readonly SysHookMan hook = new SysHookMan();
         /// <summary>
