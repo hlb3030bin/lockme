@@ -47,7 +47,12 @@ namespace LockMe.Windows.mycontrol
             nu_run_app.Text = run_app;
         }
 
+        #region 
         public string Get_home_url()
+        {
+            return tx_home_url.Text;
+        }
+        public string Set_home_url(string tvalue)
         {
             return tx_home_url.Text;
         }
@@ -55,35 +60,66 @@ namespace LockMe.Windows.mycontrol
         {
             return tx_enter_url.Text;
         }
+        public string Set_enter_url(string tvalue)
+        {
+            return tx_home_url.Text;
+        }
         public string Get_user_id()
         {
             return tx_user_id.Text;
+        }
+        public string Set_user_id(string tvalue)
+        {
+            return tx_home_url.Text;
         }
         public string Get_pass_word()
         {
             return tx_pass_word.Text;
         }
+        public string Set_pass_word(string tvalue)
+        {
+            return tx_home_url.Text;
+        }
         public string Get_run_app()
         {
             return nu_run_app.Text;
+        }
+        public string Set_run_app(string tvalue)
+        {
+            return tx_home_url.Text;
         }
         public string Get_is_task()
         {
             return "";
         }
-
+        public string Set_is_task(string tvalue)
+        {
+            return tx_home_url.Text;
+        }
         public string Get_is_border()
         {
             return "";
         }
-
+        public string Set_is_border(string tvalue)
+        {
+            return tx_home_url.Text;
+        }
         public string Get_auto_login()
         {
             return "";
+        }
+        public string Set_auto_login(string tvalue)
+        {
+            return tx_home_url.Text;
         }
         public string Get_auto_run()
         {
             return "";
         }
+        public string Set_auto_run(string tvalue)
+        {
+            return tx_home_url.Text;
+        }
+        #endregion
     }
 }
