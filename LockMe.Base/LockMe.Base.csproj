@@ -65,13 +65,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyOpaqueLayer.cs" />
     <Compile Include="oxbase\BrowerEventHandler.cs" />
     <Compile Include="oxbase\ControlExtensions.cs" />
     <Compile Include="oxbase\LogSimpleMan.cs" />
     <Compile Include="oxbase\MenuHandler.cs" />
     <Compile Include="oxbase\MyDownLoadFile.cs" />
-    <Compile Include="oxbase\OpaqueCommand.cs" />
     <Compile Include="oxbase\SysAdminRunApp.cs" />
     <Compile Include="oxbase\SysAutoRunMan.cs" />
     <Compile Include="oxbase\SysHookMan.cs" />

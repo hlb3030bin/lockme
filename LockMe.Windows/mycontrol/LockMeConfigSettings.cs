@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace LockMe.Windows.mycontrol
 {
     public partial class LockMeConfigSettings : UserControl
@@ -15,6 +16,9 @@ namespace LockMe.Windows.mycontrol
         public LockMeConfigSettings()
         {
             InitializeComponent();
+            //BackgroundImage = (Image)SysMeResource.GetResourceObject("bg");
+
         }
+
     }
 }

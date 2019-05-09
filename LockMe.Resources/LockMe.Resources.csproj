@@ -63,5 +63,11 @@
   <ItemGroup>
     <None Include="Resources\bitbug_favicon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Startico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SET.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
