@@ -76,6 +76,7 @@
     <Compile Include="oxbase\SysInitGodMan.cs" />
     <Compile Include="oxbase\SysNlogMan.cs" />
     <Compile Include="oxbase\SysTaskMan.cs" />
+    <Compile Include="oxbase\SysWindowsMan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

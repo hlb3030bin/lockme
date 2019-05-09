@@ -1,6 +1,6 @@
-﻿namespace LockMe
+﻿namespace LockMe.Windows.Main
 {
-    partial class LockMe
+    partial class MainLockMe
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LockMe));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainLockMe));
             this.SuspendLayout();
             // 
             // LockMe

@@ -49,8 +49,8 @@ namespace LockMe.Base.OxBase
             }
             catch (Exception ex)
             {
-                logger.Trace(ex, $@"------Trace.-异常开机启动-----");
-                logger.Error(ex, $@"------Error.-异常开机启动-----");
+                
+                logger.Error(ex, $@"------Error.-异常开机启动:{ex.Message}:{ex.GetBaseException().StackTrace}-----");
                 //throw new Exception(ex.Message, ex);
             }
 
@@ -82,8 +82,7 @@ namespace LockMe.Base.OxBase
             catch (Exception ex)
             {
 
-                logger.Trace(ex, $@"------Trace.-异常注册表-----");
-                logger.Error(ex, $@"------Error.-异常注册表-----");
+                logger.Error(ex, $@"------Error.-异常注册表:{ex.Message}:{ex.GetBaseException().StackTrace}-----");
                 throw new Exception(ex.Message, ex);
             }
         }

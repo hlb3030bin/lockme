@@ -92,23 +92,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="base\BrowerEventHandler.cs" />
-    <Compile Include="base\ControlExtensions.cs" />
-    <Compile Include="base\SysAdminRunApp.cs" />
-    <Compile Include="base\SysHookMan.cs" />
-    <Compile Include="base\LogSimpleMan.cs" />
-    <Compile Include="base\MyDownLoadFile.cs" />
-    <Compile Include="base\SysAutoRunMan.cs" />
-    <Compile Include="base\SysInitGodMan.cs" />
-    <Compile Include="base\SysNlogMan.cs" />
-    <Compile Include="base\SysTaskMan.cs" />
-    <Compile Include="LockMe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LockMe.Designer.cs">
-      <DependentUpon>LockMe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="base\MenuHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.Designer.cs">
@@ -117,9 +100,6 @@
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
     <None Include="Resources\bitbug_favicon.ico" />
-    <EmbeddedResource Include="LockMe.resx">
-      <DependentUpon>LockMe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

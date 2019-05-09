@@ -3,11 +3,13 @@ using System.Configuration;
 using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms;
+using LockMe.Base.OxBase;
 using NLog;
+using ControlExtensions = CefSharp.WinForms.Internals.ControlExtensions;
 
-namespace LockMe
+namespace LockMe.Windows.Main
 {
-    public partial class LockMe : Form
+    public partial class MainLockMe : Form
     {
         public ChromiumWebBrowser browser;
 
@@ -26,7 +28,7 @@ namespace LockMe
             }
             catch (Exception ex)
             {
-                logger.Trace(ex, $@"------异常InitBrowser------");
+                logger.Error(ex, $@"------异常InitBrowser:{ex.Message}:{ex.GetBaseException().StackTrace}------");
             }
            
         }
@@ -36,10 +38,10 @@ namespace LockMe
             IWebBrowser browser = (ChromiumWebBrowser)sender;
             var url = browser.Address;
             var isloading = args.IsLoading;
-            this.InvokeOnUiThreadIfRequired(() => BrowerEventHandler.SetIsLoading(browser, isloading, url));
+            ControlExtensions.InvokeOnUiThreadIfRequired(this, () => BrowerEventHandler.SetIsLoading(browser, isloading, url));
         }
 
-        public LockMe()
+        public MainLockMe()
         {
             try
             {             
@@ -51,8 +53,8 @@ namespace LockMe
             }
             catch (Exception ex)
             {
-                logger.Trace(ex, $@"------Trace.LockMe()-----");
-                logger.Error(ex, $@"------Error.LockMe()-----");
+       
+                logger.Error(ex, $@"------Error.LockMe():{ex.Message}:{ex.GetBaseException().StackTrace}-----");
             }
         }
         private void LockMeLoad(object sender, EventArgs e)

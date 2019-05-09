@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using LockMe.Base.OxBase;
+using LockMe.Windows.Main;
 using NLog;
 
 namespace LockMe
@@ -16,8 +18,8 @@ namespace LockMe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LockMe());
-            SysAdminRunApp.RunApp(new LockMe());
+            //Application.Run(new MainLockMe());
+            SysAdminRunApp.RunApp(new MainLockMe());
             return;
             //#region 去掉
             ////获得当前登录的Windows用户标示

@@ -55,6 +55,10 @@ namespace LockMe.Base.OxBase
         }
         private void InitAutoRun()
         {
+            //不是管理员不执行
+            if (!SysWindowsMan.CheckRoleAdministrator())
+                return;
+
             int if_auto_run = Int32.Parse(ConfigurationManager.AppSettings["AUTO_RUN"]);
             string strFilePath = Application.ExecutablePath;
             string strFileName = System.IO.Path.GetFileName(strFilePath);
@@ -83,6 +87,9 @@ namespace LockMe.Base.OxBase
         {
             //管理任务管理器的方法
             //0：启用任务管理器 1：禁用任务管理器
+            //不是管理员不执行
+            if (!SysWindowsMan.CheckRoleAdministrator())
+                return;
             SysTaskMan.TaskManager();
         }
     }
