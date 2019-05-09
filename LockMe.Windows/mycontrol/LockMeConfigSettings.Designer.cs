@@ -52,11 +52,11 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.save_sets = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.nu_run_app = new System.Windows.Forms.NumericUpDown();
             this.tx_pass_word = new System.Windows.Forms.TextBox();
             this.tx_enter_url = new System.Windows.Forms.TextBox();
             this.tx_user_id = new System.Windows.Forms.TextBox();
             this.tx_home_url = new System.Windows.Forms.TextBox();
-            this.nu_run_app = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -294,7 +294,7 @@
             // 
             // save_sets
             // 
-            this.save_sets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.save_sets.BackColor = System.Drawing.SystemColors.Control;
             this.save_sets.FlatAppearance.BorderSize = 2;
             this.save_sets.Font = new System.Drawing.Font("华文行楷", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.save_sets.Location = new System.Drawing.Point(455, 66);
@@ -323,6 +323,15 @@
             this.groupBox2.Size = new System.Drawing.Size(722, 156);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
+            // 
+            // nu_run_app
+            // 
+            this.nu_run_app.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.nu_run_app.Location = new System.Drawing.Point(106, 112);
+            this.nu_run_app.Name = "nu_run_app";
+            this.nu_run_app.Size = new System.Drawing.Size(250, 21);
+            this.nu_run_app.TabIndex = 26;
+            this.nu_run_app.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tx_pass_word
             // 
@@ -357,20 +366,11 @@
             this.tx_home_url.Size = new System.Drawing.Size(250, 21);
             this.tx_home_url.TabIndex = 21;
             // 
-            // nu_run_app
-            // 
-            this.nu_run_app.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.nu_run_app.Location = new System.Drawing.Point(106, 112);
-            this.nu_run_app.Name = "nu_run_app";
-            this.nu_run_app.Size = new System.Drawing.Size(250, 21);
-            this.nu_run_app.TabIndex = 26;
-            this.nu_run_app.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // LockMeConfigSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "LockMeConfigSettings";

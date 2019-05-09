@@ -24,13 +24,7 @@ namespace LockMe.Windows.mycontrol
 
         private void save_sets_Click(object sender, EventArgs e)
         {
-            //Configuration config =
-            //    ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            //config.AppSettings.Settings["username"].Value = "admin2";
-            //// 保存
-            //config.Save();
-            //// 刷新
-            //ConfigurationManager.RefreshSection("appSettings");
+            this.Visible = !this.Visible;
         }
 
         public void LoadAppSettings()

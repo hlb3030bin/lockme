@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Configuration;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms;
 using LockMe.Base.OxBase;
-using LockMe.Windows.mycontrol;
 using NLog;
+
 namespace LockMe.Windows.Main
 {
     public partial class MainLockMe : Form
@@ -15,7 +16,7 @@ namespace LockMe.Windows.Main
 
         //private LockMeConfigSettings meSettings;
 
-        private  ILogger logger = LogManager.GetCurrentClassLogger();
+        private readonly ILogger logger = LogManager.GetCurrentClassLogger();
 
         private const int x_extent = 100;
 
@@ -25,7 +26,6 @@ namespace LockMe.Windows.Main
         {
             try
             {
-
                 browser = new ChromiumWebBrowser(ConfigurationManager.AppSettings["HOME_URL"]);
                 browser.MenuHandler = new MenuHandler();
                 browser.DownloadHandler = new MyDownLoadFile();
@@ -35,26 +35,23 @@ namespace LockMe.Windows.Main
             }
             catch (Exception ex)
             {
-                
                 logger.Error(ex, $@"------异常InitBrowser:{ex.Message}:{ex.GetBaseException().StackTrace}------");
             }
-           
         }
 
         private void InitMeSettings()
         {
             meSettings.Visible = false;
-            Rectangle ScreenArea = GetScreenArea();
-            int width = ScreenArea.Width;
-            int height = ScreenArea.Height;
-            meSettings.Size= new System.Drawing.Size(meSettings.Width, height);
-            meSettings.Location = new Point((width- meSettings.Width)/2, 0);
-           
+            var ScreenArea = GetScreenArea();
+            var width = ScreenArea.Width;
+            var height = ScreenArea.Height;
+            meSettings.Size = new Size(meSettings.Width, height);
+            meSettings.Location = new Point((width - meSettings.Width) / 2, 0);
         }
 
         private void OnLoadingStateChanged(object sender, LoadingStateChangedEventArgs args)
         {
-            IWebBrowser browser = (ChromiumWebBrowser)sender;
+            IWebBrowser browser = (ChromiumWebBrowser) sender;
             var url = browser.Address;
             var isloading = args.IsLoading;
             this.InvokeOnUiThreadIfRequired(() => BrowerEventHandler.SetIsLoading(browser, isloading, url));
@@ -63,19 +60,15 @@ namespace LockMe.Windows.Main
         public MainLockMe()
         {
             try
-            {             
+            {
                 InitializeComponent();
                 BorderShow();
                 SysInitGodMan.Instance().SysInit();
                 InitMeSettings();
                 InitBrowser();
-                
-
-
             }
             catch (Exception ex)
             {
-                
                 logger.Error(ex, $@"------Error.LockMe():{ex.Message}:{ex.GetBaseException().StackTrace}-----");
             }
         }
@@ -84,36 +77,32 @@ namespace LockMe.Windows.Main
         {
             FullScreen();
             Locations();
-           
-
-
         }
-        public void Locations()//控件相对于屏幕位置
+
+        public void Locations() //控件相对于屏幕位置
         {
-            Rectangle ScreenArea = GetScreenArea();
-            int width = ScreenArea.Width; 
-            int height = ScreenArea.Height;
-            bt_power.Location = new Point(x_extent, height- y_extent);
-            bt_setting.Location = new Point(width - (x_extent+ bt_setting.Width), height - y_extent);
-          
+            var ScreenArea = GetScreenArea();
+            var width = ScreenArea.Width;
+            var height = ScreenArea.Height;
+            bt_power.Location = new Point(x_extent, height - y_extent);
+            bt_setting.Location = new Point(width - (x_extent + bt_setting.Width), height - y_extent);
+            panel_power.Location = new Point(x_extent, bt_power.Location.Y - panel_power.Height - 10);
         }
 
         private Rectangle GetScreenArea()
         {
             return Screen.GetBounds(this);
         }
+
         private void BorderShow()
         {
-            if (Int32.Parse(ConfigurationManager.AppSettings["IS_BORDER"]) == 1)
-            {
+            if (int.Parse(ConfigurationManager.AppSettings["IS_BORDER"]) == 1)
                 FormBorderStyle = FormBorderStyle.Sizable;
-
-            }
         }
 
 
         /// <summary>
-        /// 全屏
+        ///     全屏
         /// </summary>
         private void FullScreen()
         {
@@ -126,6 +115,24 @@ namespace LockMe.Windows.Main
             meSettings.Visible = !meSettings.Visible;
         }
 
+        private void bt_poweroff_Click(object sender, EventArgs e)
+        {
+            var dr = MessageBox.Show("确定要关机？", "提示", MessageBoxButtons.OKCancel);
+            if (dr == DialogResult.OK)
+                SysWindowsMan.ShutDown();
+        }
+
+        private void bt_reboot_Click(object sender, EventArgs e)
+        {
+            var dr = MessageBox.Show("确定要重启？", "提示", MessageBoxButtons.OKCancel);
+            if (dr == DialogResult.OK)
+                SysWindowsMan.Reboot();
+        }
+
+        private void bt_power_Click(object sender, EventArgs e)
+        {
+            panel_power.Visible = !panel_power.Visible;
+        }
        
     }
 }
