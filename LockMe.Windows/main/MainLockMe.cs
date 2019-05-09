@@ -5,7 +5,6 @@ using CefSharp;
 using CefSharp.WinForms;
 using LockMe.Base.OxBase;
 using NLog;
-
 namespace LockMe.Windows.Main
 {
     public partial class MainLockMe : Form
@@ -27,6 +26,7 @@ namespace LockMe.Windows.Main
             }
             catch (Exception ex)
             {
+                
                 logger.Error(ex, $@"------异常InitBrowser:{ex.Message}:{ex.GetBaseException().StackTrace}------");
             }
            
@@ -52,7 +52,7 @@ namespace LockMe.Windows.Main
             }
             catch (Exception ex)
             {
-       
+                
                 logger.Error(ex, $@"------Error.LockMe():{ex.Message}:{ex.GetBaseException().StackTrace}-----");
             }
         }
