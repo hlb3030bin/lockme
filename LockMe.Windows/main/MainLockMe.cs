@@ -122,7 +122,10 @@ namespace LockMe.Windows.Main
 
         private void bt_setting_Click(object sender, EventArgs e)
         {
+            meSettings.LoadAppSettings();
             meSettings.Visible = !meSettings.Visible;
         }
+
+       
     }
 }
