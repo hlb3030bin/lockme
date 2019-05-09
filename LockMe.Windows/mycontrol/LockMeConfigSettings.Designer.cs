@@ -31,38 +31,39 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radio_task_0 = new System.Windows.Forms.RadioButton();
+            this.radio_task_1 = new System.Windows.Forms.RadioButton();
+            this.radio_border_0 = new System.Windows.Forms.RadioButton();
+            this.radio_border_1 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radio_login_0 = new System.Windows.Forms.RadioButton();
+            this.radio_login_1 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radio_auto_0 = new System.Windows.Forms.RadioButton();
+            this.radio_auto_1 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.savesets = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.save_sets = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tx_pass_word = new System.Windows.Forms.TextBox();
+            this.tx_enter_url = new System.Windows.Forms.TextBox();
+            this.tx_user_id = new System.Windows.Forms.TextBox();
+            this.tx_home_url = new System.Windows.Forms.TextBox();
+            this.nu_run_app = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nu_run_app)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -92,49 +93,49 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "任务管理器";
             // 
-            // radioButton1
+            // radio_task_0
             // 
-            this.radioButton1.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton1.Location = new System.Drawing.Point(126, 12);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 21);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "启用";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.radio_task_0.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_task_0.Location = new System.Drawing.Point(190, 14);
+            this.radio_task_0.Name = "radio_task_0";
+            this.radio_task_0.Size = new System.Drawing.Size(58, 21);
+            this.radio_task_0.TabIndex = 5;
+            this.radio_task_0.TabStop = true;
+            this.radio_task_0.Text = "启用";
+            this.radio_task_0.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // radio_task_1
             // 
-            this.radioButton2.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton2.Location = new System.Drawing.Point(191, 14);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(58, 21);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "禁用";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.radio_task_1.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_task_1.Location = new System.Drawing.Point(125, 14);
+            this.radio_task_1.Name = "radio_task_1";
+            this.radio_task_1.Size = new System.Drawing.Size(58, 21);
+            this.radio_task_1.TabIndex = 6;
+            this.radio_task_1.TabStop = true;
+            this.radio_task_1.Text = "禁用";
+            this.radio_task_1.UseVisualStyleBackColor = false;
             // 
-            // radioButton3
+            // radio_border_0
             // 
-            this.radioButton3.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton3.Location = new System.Drawing.Point(189, 12);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(74, 21);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "不显示";
-            this.radioButton3.UseVisualStyleBackColor = false;
+            this.radio_border_0.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_border_0.Location = new System.Drawing.Point(189, 12);
+            this.radio_border_0.Name = "radio_border_0";
+            this.radio_border_0.Size = new System.Drawing.Size(74, 21);
+            this.radio_border_0.TabIndex = 9;
+            this.radio_border_0.TabStop = true;
+            this.radio_border_0.Text = "禁用";
+            this.radio_border_0.UseVisualStyleBackColor = false;
             // 
-            // radioButton4
+            // radio_border_1
             // 
-            this.radioButton4.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton4.Location = new System.Drawing.Point(124, 10);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 21);
-            this.radioButton4.TabIndex = 8;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "显示";
-            this.radioButton4.UseVisualStyleBackColor = false;
+            this.radio_border_1.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_border_1.Location = new System.Drawing.Point(124, 10);
+            this.radio_border_1.Name = "radio_border_1";
+            this.radio_border_1.Size = new System.Drawing.Size(58, 21);
+            this.radio_border_1.TabIndex = 8;
+            this.radio_border_1.TabStop = true;
+            this.radio_border_1.Text = "显示";
+            this.radio_border_1.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -145,27 +146,27 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "顶部导航栏";
             // 
-            // radioButton5
+            // radio_login_0
             // 
-            this.radioButton5.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton5.Location = new System.Drawing.Point(190, 14);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(42, 21);
-            this.radioButton5.TabIndex = 12;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "否";
-            this.radioButton5.UseVisualStyleBackColor = false;
+            this.radio_login_0.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_login_0.Location = new System.Drawing.Point(190, 14);
+            this.radio_login_0.Name = "radio_login_0";
+            this.radio_login_0.Size = new System.Drawing.Size(42, 21);
+            this.radio_login_0.TabIndex = 12;
+            this.radio_login_0.TabStop = true;
+            this.radio_login_0.Text = "否";
+            this.radio_login_0.UseVisualStyleBackColor = false;
             // 
-            // radioButton6
+            // radio_login_1
             // 
-            this.radioButton6.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton6.Location = new System.Drawing.Point(125, 12);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(42, 21);
-            this.radioButton6.TabIndex = 11;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "是";
-            this.radioButton6.UseVisualStyleBackColor = false;
+            this.radio_login_1.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_login_1.Location = new System.Drawing.Point(125, 12);
+            this.radio_login_1.Name = "radio_login_1";
+            this.radio_login_1.Size = new System.Drawing.Size(42, 21);
+            this.radio_login_1.TabIndex = 11;
+            this.radio_login_1.TabStop = true;
+            this.radio_login_1.Text = "是";
+            this.radio_login_1.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -176,27 +177,27 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "自动登录";
             // 
-            // radioButton7
+            // radio_auto_0
             // 
-            this.radioButton7.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton7.Location = new System.Drawing.Point(190, 16);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(42, 21);
-            this.radioButton7.TabIndex = 15;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "否";
-            this.radioButton7.UseVisualStyleBackColor = false;
+            this.radio_auto_0.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_auto_0.Location = new System.Drawing.Point(190, 16);
+            this.radio_auto_0.Name = "radio_auto_0";
+            this.radio_auto_0.Size = new System.Drawing.Size(42, 21);
+            this.radio_auto_0.TabIndex = 15;
+            this.radio_auto_0.TabStop = true;
+            this.radio_auto_0.Text = "否";
+            this.radio_auto_0.UseVisualStyleBackColor = false;
             // 
-            // radioButton8
+            // radio_auto_1
             // 
-            this.radioButton8.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton8.Location = new System.Drawing.Point(125, 14);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(42, 21);
-            this.radioButton8.TabIndex = 14;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "是";
-            this.radioButton8.UseVisualStyleBackColor = false;
+            this.radio_auto_1.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radio_auto_1.Location = new System.Drawing.Point(125, 14);
+            this.radio_auto_1.Name = "radio_auto_1";
+            this.radio_auto_1.Size = new System.Drawing.Size(42, 21);
+            this.radio_auto_1.TabIndex = 14;
+            this.radio_auto_1.TabStop = true;
+            this.radio_auto_1.Text = "是";
+            this.radio_auto_1.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -210,7 +211,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("华文行楷", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(19, 116);
+            this.label7.Location = new System.Drawing.Point(19, 112);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 17);
             this.label7.TabIndex = 16;
@@ -240,32 +241,77 @@
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.savesets);
+            this.groupBox1.Controls.Add(this.save_sets);
             this.groupBox1.Location = new System.Drawing.Point(17, 169);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(722, 184);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             // 
-            // savesets
+            // groupBox6
             // 
-            this.savesets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.savesets.FlatAppearance.BorderSize = 2;
-            this.savesets.Font = new System.Drawing.Font("华文行楷", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.savesets.Location = new System.Drawing.Point(455, 66);
-            this.savesets.Name = "savesets";
-            this.savesets.Size = new System.Drawing.Size(157, 90);
-            this.savesets.TabIndex = 16;
-            this.savesets.Text = "保存";
-            this.savesets.UseVisualStyleBackColor = false;
+            this.groupBox6.Controls.Add(this.label4);
+            this.groupBox6.Controls.Add(this.radio_border_0);
+            this.groupBox6.Controls.Add(this.radio_border_1);
+            this.groupBox6.Location = new System.Drawing.Point(22, 61);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(281, 34);
+            this.groupBox6.TabIndex = 20;
+            this.groupBox6.TabStop = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label5);
+            this.groupBox5.Controls.Add(this.radio_login_0);
+            this.groupBox5.Controls.Add(this.radio_login_1);
+            this.groupBox5.Location = new System.Drawing.Point(22, 98);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(281, 34);
+            this.groupBox5.TabIndex = 19;
+            this.groupBox5.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.radio_auto_1);
+            this.groupBox4.Controls.Add(this.radio_auto_0);
+            this.groupBox4.Location = new System.Drawing.Point(22, 139);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(281, 34);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.radio_task_1);
+            this.groupBox3.Controls.Add(this.radio_task_0);
+            this.groupBox3.Location = new System.Drawing.Point(22, 20);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(281, 34);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            // 
+            // save_sets
+            // 
+            this.save_sets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.save_sets.FlatAppearance.BorderSize = 2;
+            this.save_sets.Font = new System.Drawing.Font("华文行楷", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.save_sets.Location = new System.Drawing.Point(455, 66);
+            this.save_sets.Name = "save_sets";
+            this.save_sets.Size = new System.Drawing.Size(157, 90);
+            this.save_sets.TabIndex = 16;
+            this.save_sets.Text = "保存";
+            this.save_sets.UseVisualStyleBackColor = false;
+            this.save_sets.Click += new System.EventHandler(this.save_sets_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.nu_run_app);
+            this.groupBox2.Controls.Add(this.tx_pass_word);
+            this.groupBox2.Controls.Add(this.tx_enter_url);
+            this.groupBox2.Controls.Add(this.tx_user_id);
+            this.groupBox2.Controls.Add(this.tx_home_url);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label2);
@@ -278,84 +324,47 @@
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             // 
-            // textBox5
+            // tx_pass_word
             // 
-            this.textBox5.Location = new System.Drawing.Point(455, 67);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(250, 25);
-            this.textBox5.TabIndex = 25;
+            this.tx_pass_word.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tx_pass_word.Location = new System.Drawing.Point(455, 67);
+            this.tx_pass_word.Name = "tx_pass_word";
+            this.tx_pass_word.PasswordChar = '*';
+            this.tx_pass_word.Size = new System.Drawing.Size(250, 21);
+            this.tx_pass_word.TabIndex = 25;
             // 
-            // textBox4
+            // tx_enter_url
             // 
-            this.textBox4.Location = new System.Drawing.Point(455, 24);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 25);
-            this.textBox4.TabIndex = 24;
+            this.tx_enter_url.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tx_enter_url.Location = new System.Drawing.Point(455, 24);
+            this.tx_enter_url.Name = "tx_enter_url";
+            this.tx_enter_url.Size = new System.Drawing.Size(250, 21);
+            this.tx_enter_url.TabIndex = 24;
             // 
-            // textBox3
+            // tx_user_id
             // 
-            this.textBox3.Location = new System.Drawing.Point(106, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 25);
-            this.textBox3.TabIndex = 23;
+            this.tx_user_id.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tx_user_id.Location = new System.Drawing.Point(106, 67);
+            this.tx_user_id.Name = "tx_user_id";
+            this.tx_user_id.Size = new System.Drawing.Size(250, 21);
+            this.tx_user_id.TabIndex = 22;
             // 
-            // textBox2
+            // tx_home_url
             // 
-            this.textBox2.Location = new System.Drawing.Point(106, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 25);
-            this.textBox2.TabIndex = 22;
+            this.tx_home_url.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tx_home_url.Location = new System.Drawing.Point(106, 24);
+            this.tx_home_url.Name = "tx_home_url";
+            this.tx_home_url.Size = new System.Drawing.Size(250, 21);
+            this.tx_home_url.TabIndex = 21;
             // 
-            // textBox1
+            // nu_run_app
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 25);
-            this.textBox1.TabIndex = 21;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
-            this.groupBox3.Location = new System.Drawing.Point(22, 20);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(281, 34);
-            this.groupBox3.TabIndex = 17;
-            this.groupBox3.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.radioButton8);
-            this.groupBox4.Controls.Add(this.radioButton7);
-            this.groupBox4.Location = new System.Drawing.Point(22, 139);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(281, 34);
-            this.groupBox4.TabIndex = 18;
-            this.groupBox4.TabStop = false;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.radioButton5);
-            this.groupBox5.Controls.Add(this.radioButton6);
-            this.groupBox5.Location = new System.Drawing.Point(22, 98);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(281, 34);
-            this.groupBox5.TabIndex = 19;
-            this.groupBox5.TabStop = false;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.label4);
-            this.groupBox6.Controls.Add(this.radioButton3);
-            this.groupBox6.Controls.Add(this.radioButton4);
-            this.groupBox6.Location = new System.Drawing.Point(22, 61);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(281, 34);
-            this.groupBox6.TabIndex = 20;
-            this.groupBox6.TabStop = false;
+            this.nu_run_app.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.nu_run_app.Location = new System.Drawing.Point(106, 112);
+            this.nu_run_app.Name = "nu_run_app";
+            this.nu_run_app.Size = new System.Drawing.Size(250, 21);
+            this.nu_run_app.TabIndex = 26;
+            this.nu_run_app.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LockMeConfigSettings
             // 
@@ -367,12 +376,13 @@
             this.Name = "LockMeConfigSettings";
             this.Size = new System.Drawing.Size(760, 367);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nu_run_app)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,31 +392,31 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radio_task_0;
+        private System.Windows.Forms.RadioButton radio_task_1;
+        private System.Windows.Forms.RadioButton radio_border_0;
+        private System.Windows.Forms.RadioButton radio_border_1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radio_login_0;
+        private System.Windows.Forms.RadioButton radio_login_1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radio_auto_0;
+        private System.Windows.Forms.RadioButton radio_auto_1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button savesets;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button save_sets;
+        private System.Windows.Forms.TextBox tx_pass_word;
+        private System.Windows.Forms.TextBox tx_enter_url;
+        private System.Windows.Forms.TextBox tx_user_id;
+        private System.Windows.Forms.TextBox tx_home_url;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.NumericUpDown nu_run_app;
     }
 }
