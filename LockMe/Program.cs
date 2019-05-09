@@ -18,8 +18,8 @@ namespace LockMe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainLockMe());
-            //SysAdminRunApp.RunApp(new MainLockMe());
+            //Application.Run(new MainLockMe());
+            SysAdminRunApp.RunApp(new MainLockMe());
             return;
             //#region 去掉
             ////获得当前登录的Windows用户标示
