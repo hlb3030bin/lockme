@@ -5,7 +5,6 @@ using CefSharp;
 using CefSharp.WinForms;
 using LockMe.Base.OxBase;
 using NLog;
-using ControlExtensions = CefSharp.WinForms.Internals.ControlExtensions;
 
 namespace LockMe.Windows.Main
 {
@@ -38,7 +37,7 @@ namespace LockMe.Windows.Main
             IWebBrowser browser = (ChromiumWebBrowser)sender;
             var url = browser.Address;
             var isloading = args.IsLoading;
-            ControlExtensions.InvokeOnUiThreadIfRequired(this, () => BrowerEventHandler.SetIsLoading(browser, isloading, url));
+            this.InvokeOnUiThreadIfRequired(() => BrowerEventHandler.SetIsLoading(browser, isloading, url));
         }
 
         public MainLockMe()
@@ -65,7 +64,7 @@ namespace LockMe.Windows.Main
         {
             if (Int32.Parse(ConfigurationManager.AppSettings["IS_BORDER"]) == 1)
             {
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                FormBorderStyle = FormBorderStyle.Sizable;
 
             }
         }
