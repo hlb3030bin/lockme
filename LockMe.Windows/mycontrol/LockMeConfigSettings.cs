@@ -18,7 +18,6 @@ namespace LockMe.Windows.mycontrol
         public LockMeConfigSettings()
         {
             InitializeComponent();
-            //BackgroundImage = (Image)SysMeResource.GetResourceObject("bg");
 
         }
 
@@ -46,6 +45,45 @@ namespace LockMe.Windows.mycontrol
             tx_user_id.Text = user_id;
             tx_pass_word.Text = pass_word;
             nu_run_app.Text = run_app;
+        }
+
+        public string Get_home_url()
+        {
+            return tx_home_url.Text;
+        }
+        public string Get_enter_url()
+        {
+            return tx_enter_url.Text;
+        }
+        public string Get_user_id()
+        {
+            return tx_user_id.Text;
+        }
+        public string Get_pass_word()
+        {
+            return tx_pass_word.Text;
+        }
+        public string Get_run_app()
+        {
+            return nu_run_app.Text;
+        }
+        public string Get_is_task()
+        {
+            return "";
+        }
+
+        public string Get_is_border()
+        {
+            return "";
+        }
+
+        public string Get_auto_login()
+        {
+            return "";
+        }
+        public string Get_auto_run()
+        {
+            return "";
         }
     }
 }
