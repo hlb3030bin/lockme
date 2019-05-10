@@ -4,7 +4,7 @@ using NLog;
 
 namespace LockMe.Base.OxBase
 {
-    public sealed class SysAutoRunMan
+    public  class SysAutoRunMan
     {
         private static ILogger logger = LogManager.GetCurrentClassLogger();
 

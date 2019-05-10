@@ -6,9 +6,9 @@ namespace LockMe.Base.OxBase
 {
     public class SysAdminRunApp
     {
-        private static  ILogger logger = LogManager.GetCurrentClassLogger();
+        private   ILogger logger = LogManager.GetCurrentClassLogger();
 
-        public static void RunApp(Form appform)
+        public  void RunApp(Form appform)
         {
 
             logger.Info("------判断是否管理员------");
@@ -30,7 +30,7 @@ namespace LockMe.Base.OxBase
         /// <summary>
         /// 管理员运行
         /// </summary>
-        public static void AdminRunapp()
+        public  void AdminRunapp()
         {
             //创建启动对象
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();

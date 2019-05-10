@@ -27,7 +27,7 @@ namespace LockMe.Windows.mycontrol
             SaveAppSettings();
             MessageBox.Show("保存配置成功重启APP生效!");
             this.Visible = !this.Visible;
-            SysAdminRunApp.AdminRunapp();
+            new SysAdminRunApp().AdminRunapp();
         }
 
         public void SaveAppSettings()
