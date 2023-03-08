@@ -13,6 +13,14 @@ namespace LockMe
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
+        
+        /// <summary>
+        /// 应用程序的主入口点。
+        /// </summary>
+        
+        /// <summary>
+        /// 应用程序的主入口点。
+        /// </summary>
         [STAThread]
         static void Main()
         {
